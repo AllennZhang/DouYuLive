@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include layout="@layout/home_title_view"></include>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#eeeeee"
+        >
+        <!--<com.flyco.tablayout.SlidingTabLayout-->
+            <!--android:id="@+id/slidingTab"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:background="#ffffff"-->
+            <!--tl:tl_divider_padding="1dp"-->
+            <!--tl:tl_divider_width="10dp"-->
+            <!--tl:tl_indicator_color="#ff7800"-->
+            <!--tl:tl_indicator_height="3dp"-->
+            <!--tl:tl_tab_padding="10dp"-->
+            <!--tl:tl_tab_space_equal="true"-->
+            <!--tl:tl_textBold="BOTH"-->
+            <!--tl:tl_textSelectColor="#ff7800"-->
+            <!--tl:tl_textUnselectColor="#707070"-->
+            <!--/>-->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:tabTextAppearance="@style/TabLayoutTextAppearance"
+            android:background="#ffffff"
+            app:tabTextColor="#707070"
+            app:tabSelectedTextColor="#ff7800"
+            app:tabIndicatorHeight="3dp"
+            app:tabIndicatorColor="#ff7800"
+            app:tabMode="scrollable"
+            app:tabMinWidth="48dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#34707070"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

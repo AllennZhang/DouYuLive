@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.youri.dylive">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:name=".base.AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- 适配规格 -->
+        <meta-data
+            android:name="design_width"
+            android:value="1080"></meta-data>
+        <meta-data
+            android:name="design_height"
+            android:value="1920"></meta-data> <!-- 适配规格 -->
+        <activity android:name=".view.activity.MainActivity"
+            android:theme="@style/AppWelcome">
+        </activity>
+        <activity android:name=".view.activity.SplashActivity"
+            android:theme="@style/AppWelcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activity.LiveActivity"/>
+        <activity android:name=".view.activity.ShowingLiveActivity"/>
+
+        <service
+            android:name="tv.danmaku.ijkplayer.media.services.MediaPlayerService"
+            android:enabled="false"
+            android:exported="false"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name" >
+        </service>
+    </application>
+
+</manifest>

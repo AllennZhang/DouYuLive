@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff7800</color>
+    <color name="colorPrimaryDark">#ff7800</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--主界面-->
+    <color name="tab_text_normal">#212121</color>
+    <!--TabBar 字体颜色-->
+    <color name="comui_tab_text_color">#929292</color>
+    <color name="comui_tab_select_color">#FD9835</color>
+    <color name="background">#ffffff</color>
+    <color name="btn_ok_pressed">#ff4248</color>
+    <color name="btn_ok_unpressed">#99ff4248</color>
+
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_text">#555555</color>
+    <color name="dialog_white">#fdfdfd</color>
+    <color name="black">#000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="alerDialogMsg">#343434</color>
+    <color name="alerDialogPosBtn">#ffffff</color>
+    <color name="picker_button">#ff4248</color>
+    <color name="title_bar_cancel">#ff8400</color>
+    <color name="guide_btn">#ffffff</color>
+    <color name="blue_btn_pressed">#ff96bfd2</color>
+    <color name="blue_btn_unpressed">#ffaedef4</color>
+    <!--播放器style-->
+    <color name="control_bar_bg">#e0222222</color>
+    <color name="base_background">#eeeeee</color>
+
+    <color name="ijk_color_blue_main">@color/ijk_color_blue_500</color>
+    <color name="ijk_color_blue_50">#E3F2FD</color>
+    <color name="ijk_color_blue_100">#BBDEFB</color>
+    <color name="ijk_color_blue_200">#90CAF9</color>
+    <color name="ijk_color_blue_300">#64B5F6</color>
+    <color name="ijk_color_blue_400">#42A5F5</color>
+    <color name="ijk_color_blue_500">#2196F3</color>
+    <color name="ijk_color_blue_600">#1E88E5</color>
+    <color name="ijk_color_blue_700">#1976D2</color>
+    <color name="ijk_color_blue_800">#1565C0</color>
+    <color name="ijk_color_blue_900">#0D47A1</color>
+
+    <color name="ijk_transparent_dark">#77000000</color>
+</resources>

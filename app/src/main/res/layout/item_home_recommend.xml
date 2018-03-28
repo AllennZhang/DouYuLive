@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/wh10.0dimens10.0dp"
+    android:id="@+id/item_home_recommed_girdview"
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:layout_height="wrap_content"
+      android:background="#ffffff"
+      >
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/wh50.0dimens50.0dp">
+  <ImageView
+      android:id="@+id/img_column_icon"
+      android:layout_width="@dimen/wh20.0dimens20.0dp"
+      android:layout_height="@dimen/wh20.0dimens20.0dp"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="@dimen/wh5.0dimens5.0dp"
+      android:layout_marginRight="@dimen/wh5.0dimens5.0dp"
+      android:layout_marginBottom="@dimen/wh10.0dimens10.0dp" />
+    <TextView
+        android:id="@+id/tv_column_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginRight="@dimen/wh15.0dimens15.0dp"
+        android:textColor="#393939"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/wh10.0dimens10.0dp"
+        android:layout_toRightOf="@+id/img_column_icon" />
+    <RelativeLayout
+        android:id="@+id/rl_column_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        >
+    <ImageView
+        android:id="@+id/img_column_more"
+        android:layout_width="@dimen/wh15.0dimens15.0dp"
+        android:layout_height="@dimen/wh15.0dimens15.0dp"
+        android:src="@drawable/icon_right_arrow_gray"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/wh12.0dimens12.0dp"
+        android:layout_marginBottom="@dimen/wh10.0dimens10.0dp" />
+    <TextView
+        android:id="@+id/tv_column_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#b0b0b0"
+        android:layout_marginRight="@dimen/wh2.0dimens2.0dp"
+        android:text="更多"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/wh10.0dimens10.0dp"
+        android:layout_toLeftOf="@+id/img_column_more" />
+    </RelativeLayout>
+  </RelativeLayout>
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/rv_column_list"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+  </android.support.v7.widget.RecyclerView>
+  </LinearLayout>
+</LinearLayout>
