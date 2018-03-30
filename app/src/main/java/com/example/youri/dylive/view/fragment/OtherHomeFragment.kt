@@ -9,6 +9,7 @@ import com.example.youri.dylive.base.BaseFragment
 import com.example.youri.dylive.contract.LiveContract
 import com.example.youri.dylive.modle.LiveInfo
 import com.example.youri.dylive.presenter.LivePresenter
+import com.example.youri.dylive.toast
 import com.example.youri.dylive.view.adapter.LiveListAdapter
 import com.scwang.smartrefresh.layout.api.RefreshLayout
 import com.scwang.smartrefresh.layout.footer.ClassicsFooter
@@ -16,7 +17,6 @@ import com.scwang.smartrefresh.layout.header.ClassicsHeader
 import com.scwang.smartrefresh.layout.listener.OnLoadmoreListener
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener
 import kotlinx.android.synthetic.main.fragment_home_otherlist.*
-
 
 /**
  * Created by youri on 2017/12/25.
@@ -35,7 +35,6 @@ class OtherHomeFragment: BaseFragment(),LiveContract.View{
             bundle.putString("slug", slug)
             mInstance.setArguments(bundle)
             return mInstance
-//            return OtherHomeFragment()
         }
     }
     override fun getLayoutResId(): Int {
@@ -84,7 +83,7 @@ class OtherHomeFragment: BaseFragment(),LiveContract.View{
     }
 
     override fun showError(msg: String) {
-        svProgressHUD.showErrorWithStatus(msg)
+        activity?.toast(msg)
     }
 
     override fun getLiveList(data: List<LiveInfo>) {

@@ -3,6 +3,7 @@
 package com.example.youri.dylive
 
 import android.content.Context
+import android.widget.Toast
 import com.example.youri.dylive.base.AppApplication
 import com.example.youri.dylive.utils.MD5Util
 import java.util.*
@@ -34,6 +35,13 @@ fun getParamsMap(): MutableMap<String, String> {
 
 fun appContext(): Context{
     return AppApplication.instance.applicationContext
+}
+
+/**
+ * 扩展函数
+ */
+fun Context.toast(message: String,duration: Int = Toast.LENGTH_SHORT){
+    Toast.makeText(this,message,duration).show()
 }
 
 object ParamsMake{

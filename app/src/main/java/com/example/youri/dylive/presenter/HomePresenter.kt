@@ -40,11 +40,17 @@ class HomePresenter(var view: HomeCateListContract.View): HomeCateListContract.P
 
                     }
                     override fun onNext(data: List<LiveCategory>?) {
-                        if (data != null)mView.getAllCates(data)
+                        if (data != null) {
+                            mView.getAllCates(data)
+                        }else{
+                            mView.showNetWorkError()
+                        }
                     }
 
                     override fun onError(e: Throwable?) {
                         if (e?.message !=null) mView.showError(e.message!!)
+                        mView.showNetWorkError()
+
                     }
                 })
     }

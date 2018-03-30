@@ -11,11 +11,9 @@ import com.example.youri.dylive.base.BaseFragment
 import com.example.youri.dylive.contract.LiveContract
 import com.example.youri.dylive.modle.LiveInfo
 import com.example.youri.dylive.presenter.LivePresenter
-
+import com.example.youri.dylive.toast
 import tv.danmaku.ijk.media.player.IjkMediaPlayer
 import tv.danmaku.ijkplayer.media.widget.media.IjkVideoView
-
-
 /**
  * Created by youri on 2018/1/14.
  */
@@ -54,7 +52,7 @@ class VideoFragment: BaseFragment(),LiveContract.View{
         svProgressHUD.showErrorWithStatus("正在获取房间信息...")
         videoView.postDelayed({
             svProgressHUD.dismiss()
-        },1000)
+        },2000)
     }
 
     override fun onStop() {
@@ -91,7 +89,7 @@ class VideoFragment: BaseFragment(),LiveContract.View{
     }
 
     override fun showError(msg: String) {
-        svProgressHUD.showErrorWithStatus(msg)
+           activity?.toast(msg)
 
     }
 
@@ -100,7 +98,6 @@ class VideoFragment: BaseFragment(),LiveContract.View{
     }
 
     override fun enterRoom(url: String?) {
-//        svProgressHUD.dismiss()
         if(url != null) {
             try {
                 //设置播放路径

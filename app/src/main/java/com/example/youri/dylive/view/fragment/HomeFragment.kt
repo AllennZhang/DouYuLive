@@ -14,6 +14,7 @@ import com.example.youri.dylive.modle.HomeFaceScoreColumn
 import com.example.youri.dylive.modle.HomeHotColumn
 import com.example.youri.dylive.modle.HomeRecommendHotCate
 import com.example.youri.dylive.presenter.HomeCatePresenter
+import com.example.youri.dylive.toast
 import com.example.youri.dylive.view.adapter.HomeCarouselAdapter
 import com.example.youri.dylive.view.adapter.HomeListAdapter
 import com.facebook.drawee.view.SimpleDraweeView
@@ -93,7 +94,7 @@ class HomeFragment: BaseFragment(),HomeCateContract.View, BGABanner.Delegate<Sim
     }
 
     override fun showError(msg: String) {
-         svProgressHUD.showErrorWithStatus(msg)
+        activity?.toast(msg)
     }
 
    override fun getViewCarousel(data: List<HomeCarousel>) {
@@ -104,7 +105,6 @@ class HomeFragment: BaseFragment(),HomeCateContract.View, BGABanner.Delegate<Sim
         data?.forEach {  bannerImgs.add(it.pic_url) }
         recommed_banner?.setData(R.layout.item_image_carousel,bannerImgs,null)
         adapter.notifyDataSetChanged()
-        svProgressHUD.dismiss()
     }
 
     override fun getViewHotColumn(data: List<HomeHotColumn>) {
@@ -131,10 +131,7 @@ class HomeFragment: BaseFragment(),HomeCateContract.View, BGABanner.Delegate<Sim
 
     override fun onResume() {
         super.onResume()
-        svProgressHUD.showErrorWithStatus("正在拼命加载中")
-        homeRecycer.postDelayed({
-          svProgressHUD.dismiss()
-        },1000)
+
     }
 
 }

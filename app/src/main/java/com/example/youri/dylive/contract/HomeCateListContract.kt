@@ -15,6 +15,8 @@ interface HomeCateListContract{
 
         //所有分类
         fun getAllCates(cates: List<LiveCategory>)
+
+        fun showNetWorkError()
     }
 
     interface Presenter: BasePresenter{
