@@ -1,4 +1,4 @@
-# DYLive
+# DouYuLive
 a simple live app ,using  kotlin ,RxJava,Retrofit,MVP
 #基于Kotlin开发的一个直播app，项目结合了MVP+Retrofit+RxJava框架
 
@@ -8,6 +8,9 @@ a simple live app ,using  kotlin ,RxJava,Retrofit,MVP
 
 ![image](https://github.com/YouriZhang/imagefolder/blob/master/10DB68A474B42FA2BE8A0411C757240F.jpg)
 ![image](https://github.com/YouriZhang/imagefolder/blob/master/AC55F88268BD894DDAF91DA485572958.jpg)
+
+#apk下载链接
+![image](https://github.com/YouriZhang/imagefolder/blob/master/dy.png)
 
 #用到的开源库
 ```
