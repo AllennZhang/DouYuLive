@@ -2,6 +2,7 @@ package com.example.youri.dylive.view.activity
 
 import android.content.Intent
 import android.support.v4.app.Fragment
+import android.support.v4.view.ViewPager
 import android.util.Log
 import android.view.View
 import com.bigkoo.svprogresshud.SVProgressHUD
@@ -25,6 +26,7 @@ class MainActivity : BaseActivity() ,HomeCateListContract.View{
     lateinit var fragments: MutableList<Fragment>
     lateinit var pagerAdapter: HomePageAdapter
 
+    var selectedPage: Int = 0
     var lastTime: Long = 0L
     var mPresenter: HomeCateListContract.Presenter? = null
     override fun getLayoutResId(): Int {
@@ -50,6 +52,20 @@ class MainActivity : BaseActivity() ,HomeCateListContract.View{
 
         pagerAdapter = HomePageAdapter(supportFragmentManager,mTiles,fragments)
         viewpager.adapter = pagerAdapter
+        viewpager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener{
+            override fun onPageSelected(position: Int) {
+                selectedPage = position
+                Log.e("Main","pageSelected: "+selectedPage)
+            }
+
+            override fun onPageScrollStateChanged(state: Int) {
+
+            }
+
+            override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
+
+            }
+        })
         tabLayout.setupWithViewPager(viewpager)
 
     }
@@ -108,6 +124,10 @@ class MainActivity : BaseActivity() ,HomeCateListContract.View{
            mPresenter?.getAllCates()
     }
 
+    override fun onResume() {
+        super.onResume()
+        viewpager.setCurrentItem(selectedPage)
+    }
 
     override fun onBackPressed() {
         try {

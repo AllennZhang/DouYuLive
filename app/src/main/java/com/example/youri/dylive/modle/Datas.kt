@@ -159,7 +159,9 @@ data class LiveCategory( var id: Long = 0,
                          var icon_red: String? = null,
                          var slug: String? = null,
                          var type: Int = 0,
-                         var screen: Int = 0)
+                         var screen: Int = 0){
+
+}
 
 
 data class LiveInfo(
