@@ -9,16 +9,16 @@ API接口基于斗鱼，全民直播第三方抓取
 
 #项目截图
 <div aligin="center">
-  <img src="https://github.com/YouriZhang/imagefolder/blob/master/10DB68A474B42FA2BE8A0411C757240F.jpg" width="500" height="800"/>
-   <img src="https://github.com/YouriZhang/imagefolder/blob/master/AC55F88268BD894DDAF91DA485572958.jpg" width="500" height="800"/>
+  <img src="https://github.com/YouriZhang/imagefolder/blob/master/10DB68A474B42FA2BE8A0411C757240F.jpg" width="400" height="800"/>
+   <img src="https://github.com/YouriZhang/imagefolder/blob/master/AC55F88268BD894DDAF91DA485572958.jpg" width="400" height="800"/>
 </div>  
 
 
-#apk下载链接
+# apk下载链接
 ![image](https://github.com/YouriZhang/imagefolder/blob/master/1111.jpg)
 
 
-#用到的开源库
+# 用到的开源库
 ```
 io.reactivex:rxjava:1.1.8
 com.squareup.retrofit2:retrofit:2.1.0
@@ -30,6 +30,6 @@ tv.danmaku.ijk.media:ijkplayer-exo:0.8.4
 com.king.view:flutteringlayout:1.1.0
 ```
 
-#感谢：
+# 感谢：
 https://github.com/mykj/DouYu
 https://github.com/jenly1314/KingTV
