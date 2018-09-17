@@ -1,8 +1,8 @@
 # DouYuLive
 ```
-# A simple live app ,using  kotlin ,RxJava,Retrofit,MVP
-# 基于Kotlin开发的一个直播app，项目结合了MVP+Retrofit+RxJava框架
-# API接口基于斗鱼，全民直播第三方抓取
+A simple live app ,using  kotlin ,RxJava,Retrofit,MVP
+基于Kotlin开发的一个直播app，项目结合了MVP+Retrofit+RxJava框架
+API接口基于斗鱼，全民直播第三方抓取
 ```
 
 ### 声明：该项目纯属练手项目，不作为商用项目！有涉及到侵权请告知删除，涉及商用侵权与本人无关
