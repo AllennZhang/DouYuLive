@@ -9,8 +9,8 @@ API接口基于斗鱼，全民直播第三方抓取
 
 #项目截图
 <div aligin="center">
-  <img src="https://github.com/YouriZhang/imagefolder/blob/master/10DB68A474B42FA2BE8A0411C757240F.jpg" width="400" height="700"/>
-   <img src="https://github.com/YouriZhang/imagefolder/blob/master/AC55F88268BD894DDAF91DA485572958.jpg" width="400" height="700"/>
+  <img src="https://github.com/YouriZhang/imagefolder/blob/master/10DB68A474B42FA2BE8A0411C757240F.jpg" width="300" height="600"/>
+   <img src="https://github.com/YouriZhang/imagefolder/blob/master/AC55F88268BD894DDAF91DA485572958.jpg" width="300" height="600"/>
 </div>  
 
 
